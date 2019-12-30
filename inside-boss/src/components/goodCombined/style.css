@@ -1,0 +1,282 @@
+.baseInfo_wrapper {
+  margin: 27px 0 20px;
+  background: #fff;
+  padding: 18px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.ml18 {
+  margin-left: 18px;
+}
+
+.cascader {
+  margin-left: 18px;
+}
+
+.search {
+  margin-left: 10px;
+  width: 180px;
+}
+
+.table {
+  border: 1px solid #e9e9e9;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.detail {
+  display: inline-block;
+  max-height: 87px;
+  overflow: hidden;
+  /* text-overflow:ellipsis;
+display:-webkit-box;
+-webkit-line-clamp:5;
+-webkit-box-orient:vertical; */
+}
+
+.divider {
+  position: relative;
+  top: -0.06em;
+  display: inline-block;
+  width: 1px;
+  height: .9em;
+  margin: 0 8px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  background: #e8e8e8
+}
+
+.title {
+  display: flex;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+}
+
+.titleContent {
+  width: 150px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+}
+
+.titleCode {
+  width: 200px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  line-height: 12px;
+}
+
+.importButton {
+  width: 88px;
+  height: 32px;
+  background: rgba(216, 63, 63, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(216, 63, 63, 1);
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  float: right;
+  cursor: pointer;
+}
+
+.exportButton {
+  width: 88px;
+  height: 32px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid rgba(216, 63, 63, 1);
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(216, 63, 63, 1);
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.batchActions {
+  display: inline-block;
+  width: 88px;
+  height: 32px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.batchActionsPosition {
+  position: absolute;
+  bottom: 14px;
+}
+
+.changeCateWrapper {
+  background-color: #fff;
+  width: 200px;
+  position: absolute;
+  top: -26px;
+  border: 1px solid #c0c0c0;
+  z-index: 1000;
+}
+
+.changeCateTitle {
+  height: 35px;
+  line-height: 35px;
+  background-color: #c0c0c0;
+  padding: 0 10px;
+}
+
+.goCate {
+  color: rgba(85, 153, 255, 1);
+  float: right;
+  cursor: pointer;
+}
+
+.action {
+  border-top: 1px solid #c0c0c0;
+}
+
+.changeCateSave {
+  width: 40px;
+  height: 20px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid rgba(216, 63, 63, 1);
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(216, 63, 63, 1);
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.changeCateCancel {
+  width: 40px;
+  height: 20px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid black;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hasSku {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  text-align: center;
+  background: rgba(255, 170, 0, 1);
+  border-radius: 2px;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 16px;
+}
+
+.chain {
+  width: 32px;
+  height: 16px;
+  display: inline-block;
+  text-align: center;
+  background: rgba(85, 153, 255, 1);
+  border-radius: 2px;
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 16px;
+}
+
+.cover {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+  height: 100%;
+  z-index: 999;
+}
+
+.isChainIcon {
+  width: 32px;
+  height: 16px;
+  background: rgba(85, 153, 255, 1);
+  border-radius: 2px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px
+}
+
+.add_cate_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+
+.good_combined_add_cate_container .add_cate_box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #FFFFFF;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  padding: 20px
+}
+
+.closeBtn {
+  width: 70px;
+  margin: 0 auto;
+  height: 30px;
+  background: rgba(216, 63, 63, 1);
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

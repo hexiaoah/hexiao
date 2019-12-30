@@ -1,0 +1,274 @@
+html {
+    background-image: url(https://assets.2dfire.com/frontend/2a09d96ab1a27c8475b4e53f6f6132a0.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: PingFangSC-Medium;
+}
+
+.border-f, .border-b, .border-t, .border-l, .border-r {
+    position: relative;
+}
+
+.border-f:before, .border-b:before, .border-t:before, .border-l:before, .border-r:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.border-f:before {
+    border: 1px solid #ccc;
+}
+
+.border-b:before {
+    border-bottom: 1px solid #ccc;
+}
+
+.border-t:before {
+    border-top: 1px solid #ccc;
+}
+
+.border-l:before {
+    border-left: 1px solid #ccc;
+}
+
+.border-r:before {
+    border-right: 1px solid #ccc;
+}
+
+@media(-webkit-min-device-pixel-ratio: 2) {
+    .border-f:before, .border-b:before, .border-t:before, .border-l:before, .border-r:before {
+        width: 200%;
+        height: 200%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        -webkit-transform-origin: left top;
+        transform-origin: left top;
+    }
+}
+
+.m-r {
+    margin-right: 15px;
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.m-r {
+    margin-right: 15px;
+}
+
+.m-t-small {
+    margin-top: 10px;
+}
+
+.m-b-small {
+    margin-bottom: 10px;
+}
+
+.m-l-small {
+    margin-left: 10px;
+}
+
+.m-r-small {
+    margin-right: 10px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.relative {
+    position: relative;
+    z-index: 1;
+}
+
+//===============================
+.h2 {
+    font-size: 18PX;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18PX;
+    margin: 36PX auto 10PX 15PX;
+}
+
+.h3 {
+    font-size: 15PX;
+    color: #333333;
+    line-height: 20PX;
+    margin: 0 auto 10PX 15PX;
+    font-weight: 600;
+}
+
+.section-main {
+    background: white;
+}
+
+.chart-box {
+    width: 100%;
+    height: 210PX;
+    &.chart-line {
+        height: 250PX;
+    }
+    &.chart-line-graph {
+        //height: ;
+    }
+    &.chart-bar {
+        //height: ;
+    }
+    &.chart-bar-heap {
+        //height: ;
+    }
+    &.chart-bar-crosswise {
+        height: 300PX;
+    }
+    &.chart-pie {
+        //height: ;
+    }
+    &.chart-pie-annular {
+        //height: ;
+    }
+}
+
+.text-1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/**
+    箭头
+*/
+@mixin arrow($direction, $size,$halfSize, $borderColor ) {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    @if $direction == top {
+        border-bottom: $size solid $borderColor;
+        border-left: $halfSize dashed transparent;
+        border-right: $halfSize dashed transparent;
+        top: -$size;
+        left: 50%;
+        margin-left: -$halfSize;
+    } @else if $direction == right {
+        border-left: $size solid $borderColor;
+        border-top: $halfSize dashed transparent;
+        border-bottom: $halfSize dashed transparent;
+        right: -$size;
+        top: 50%;
+        margin-top: -$halfSize;
+    } @else if $direction == bottom {
+        border-top: $size solid $borderColor;
+        border-left: $halfSize dashed transparent;
+        border-right: $halfSize dashed transparent;
+        bottom: -$size;
+        left: 50%;
+        margin-left: -$halfSize;
+    } @else if $direction == left {
+        border-right: $size solid $borderColor;
+        border-top: $halfSize dashed transparent;
+        border-bottom: $halfSize dashed transparent;
+        left: -$size;
+        top: 50%;
+        margin-top: -$halfSize;
+    }
+}
+
+.tooltip-top {
+    &:before {
+        @include arrow(top, 9PX, 5PX, #999);
+    }
+    &:after {
+        @include arrow(top, 8PX, 4PX, #fff);
+    }
+}
+
+.tooltip-right {
+    &:before {
+        @include arrow(right, 9PX, 5PX, #999);
+    }
+    &:after {
+        @include arrow(right, 8PX, 4PX, #fff);
+    }
+}
+
+.tooltip-bottom {
+    &:before {
+        @include arrow(bottom, 9PX, 5PX, #999);
+    }
+    &:after {
+        @include arrow(bottom, 8PX, 4PX, #fff);
+    }
+}
+
+.tooltip-left {
+    &:before {
+        @include arrow(left, 9PX, 5PX, #999);
+    }
+    &:after {
+        @include arrow(left, 8PX, 4PX, #fff);
+    }
+}
+
+.tooltip-wrapper {
+    .title {
+        font-size: 11PX;
+        color: #333333;
+        letter-spacing: 0;
+        line-height: 14PX;
+        margin-bottom: 3PX;
+    }
+    .list {
+        position: relative;
+        font-size: 13PX;
+        color: #333333;
+        letter-spacing: 0;
+        line-height: 18PX;
+        .label {
+            vertical-align: middle;
+            display: inline-block;
+            width: 5PX;
+            height: 5PX;
+            position: absolute;
+            left: -10PX;
+            top: 50%;
+            margin-top: -2.5PX;
+            border-radius: 1PX;
+        }
+    }
+}
+
+.error-toast {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    line-height: 40px;
+    padding: 22px;
+    color: white;
+    text-align: center;
+    z-index: 120;
+    border-radius: 13PX;
+    font-size: 15PX;
+
+}

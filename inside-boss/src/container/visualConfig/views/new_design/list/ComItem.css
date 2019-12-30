@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: #fafafa;
+    border: 0.5px dashed #b4b4b4;
+    box-sizing: border-box;
+    color: #5a5a5a;
+    cursor: move;
+    display: inline-block;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+    padding: 0 0.5em;
+    text-align: center;
+    text-overflow: ellipsis;
+    user-select: none;
+    white-space: nowrap;
+    width: 110px;
+}
+.wrapper:not(.disable):hover {
+    background-color: #f4f4f4;
+}
+
+.wrapper.disable {
+    background-color: #f0f0f0;
+    border: none;
+    color: #b4b4b4;
+    cursor: not-allowed;
+}

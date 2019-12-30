@@ -1,0 +1,28 @@
+.pictureTextList{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+  }
+
+  .pictureTextList .pictureTextLi{
+    height: 82px;
+  }
+  .pictureTextList .pictureTextName{
+    font-size: 14px;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  .listText{
+    height: 46px;
+    line-height: 46px;
+    border-right: 1px solid #F5F5F5;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
+

@@ -1,0 +1,43 @@
+.Designpreview{
+    width: 100%;
+}
+.previewMain{
+    position: relative;
+    display: inline-block;
+    margin-left: 51px;
+    font-size: 0;
+}
+.previewMain .previewTitle{
+    width: 375px;
+    font-size: 14px;
+    color: #AAAAAA;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.arrPreviewItem{
+    min-height: 86vh;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.previewItemHeadImg{
+    width: 375px;
+    height: 64px;;
+}
+.arrPreviewBg{
+    width: 375px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.DesignEditorItem{
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    box-sizing: border-box;
+    z-index: 5;
+    width: 260px;
+}

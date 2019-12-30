@@ -1,0 +1,243 @@
+.nav {
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background: #272727;
+
+    color: #FFFFFF;
+
+    z-index: 100;
+}
+
+.wrap {
+    padding: 0 40px;
+}
+
+.logo {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+}
+
+.logo-img {
+    width: 88px;
+    height: 34px;
+
+    float: left;
+
+    margin-top: 18px;
+
+    padding-right: 10px;
+}
+
+.logo-name {
+    font-size: 16px;
+
+    padding: 2px 0 2px 10px;
+
+    border-left: 1px solid #666666;
+
+}
+
+.nav-bar {
+    display: inline-block;
+
+    height: 70px;
+    line-height: 70px;
+
+    float: right;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    margin: 0 32px;
+}
+
+.nav-active {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #D83F3F;
+}
+
+.account {
+    display: inline-block;
+    float: right;
+
+    margin-left: 110px;
+
+    font-size: 12px;
+
+    color: #DCDCDC;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.account-bar {
+    height: 70px;
+    line-height: 70px;
+    font-weight: 300;
+}
+
+.account-icon{
+    display: inline-block;
+    height: 15px;
+    width: 14px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-right: 9px;
+
+    vertical-align: middle;
+}
+
+.account-arrow{
+    display: inline-block;
+    height: 7px;
+    width: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-left: 8px;
+
+    vertical-align: middle;
+
+}
+
+.account-pop{
+    position: absolute;
+    right: -9999px;
+
+    width: 195px;
+    height: auto;
+    cursor: auto;
+
+    background: #ffffff;
+
+    box-shadow: 0 2px 6px rgba(202,202,202,.26);
+
+    transition: opacity 0.3s;
+    opacity: 0;
+    /*visibility: hidden;*/
+    z-index: 101;
+}
+
+.account:hover .account-pop {
+    /*visibility: visible;*/
+    right: 15px;
+
+    opacity: 1;
+}
+
+.account-pop:before {
+    content:"";
+    display:block;
+    border-width:6px;
+    position:absolute;
+    top:-12px;
+    left:158px;
+    border-style:dashed dashed solid;
+    border-color: transparent transparent #FFFFFF;
+    font-size:0;
+    line-height:0;
+}
+
+.pop-info {
+    padding: 9px 15px;
+    border-bottom: 1px solid #E6E6E6;
+
+    font-size: 12px;
+    color: #333333;
+}
+
+.info-name {
+    font-size: 14px;
+}
+
+.pop-footer {
+    padding: 13px 15px;
+}
+
+.pop-btn {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.pop-btn-shift {
+    color: #5599FF;
+    float: left;
+}
+
+.pop-btn-logout {
+    color: #D83F3F;
+    float: right;
+}
+
+.info-avatar {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    background: #999999;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info-avatar .avatar-icon {
+    margin-top: 8px;
+    display: inline-block;
+    height: 15px;
+    width: 14px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-user {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-left: 11px;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+}
+
+.user-phone {
+    margin: 0;
+    color: #666666;
+    font-size: 12px;
+
+}
+
+.info-shop {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+
+}
+.info-level {
+    margin: 0;
+    font-size: 12px;
+
+}
+
+.clear {
+    clear: both;
+}

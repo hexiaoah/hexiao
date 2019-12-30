@@ -1,0 +1,97 @@
+.placeholderWrapper {
+  height: 40px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #9B9B9B;
+  border-radius: 29.5px;
+  border: 1px solid #B4B4B4;
+  position: absolute;
+  left: 110%;
+  top: -64px;
+}
+
+.placeholder {
+    align-items: center;
+    display: flex;
+}
+.placeholder img {
+    height: 18px;
+    margin-right: 8px;
+}
+.label{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+.radioGroup{
+  display: inline-block;
+  vertical-align: top;
+}
+.componentTitleEditor{
+    font-size: 12px;
+    margin-bottom: 26px;
+  }
+.controlGroupControl{
+    display: inline-block;
+    vertical-align: top;
+}
+.titleInput{
+    display: inline-block;
+    vertical-align: top;
+    width: 279px;
+    padding: 0 7px 0 11px;
+    height: 28px;
+    font-size: 0;
+    line-height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #D8D8D8;
+    margin-top: -7px;
+  }
+  .titleInput .input{
+    display: inline-block;
+    vertical-align: top;
+    width: 228px;
+    padding: 0;
+    height: 28px;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+  }
+  .titleInput .wordNumber{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #B4B4B4;
+  }
+  .changImg{
+    margin-bottom: 22px;
+  }
+  .uploadImg{
+    height: 28px;
+    margin-top: -5px;
+    background: #FDFDFD ;
+    color: #9B9B9B;
+    border-radius: 29.5px;
+    border: 1px solid #B4B4B4;
+  }
+  .titlePickColor{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .titlePickColor .titleSketchPicker{
+    position: absolute;
+    left: 22%;
+    top: 48%;
+    z-index: 1;
+  }
+  .pickColorBtn{
+    background: #F5F5F5;
+    border: 1px solid #B4B4B4;
+    width: 40px;
+    height: 24px;;
+  }
+  .save{
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+  }

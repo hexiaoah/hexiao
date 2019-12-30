@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>@2dfire/utils Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">@2dfire/utils</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="imageUtil.html">imageUtil</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#arrayFind">arrayFind</a></li><li><a href="global.html#arrayFindIndex">arrayFindIndex</a></li><li><a href="global.html#arrayUnique">arrayUnique</a></li><li><a href="global.html#clone">clone</a></li><li><a href="global.html#createUrl">createUrl</a></li><li><a href="global.html#dFireFetch">dFireFetch</a></li><li><a href="global.html#dFireFetchWithoutGlobal">dFireFetchWithoutGlobal</a></li><li><a href="global.html#enterSocketRoom">enterSocketRoom</a></li><li><a href="global.html#extract">extract</a></li><li><a href="global.html#getGlobalOptions">getGlobalOptions</a></li><li><a href="global.html#getRealUrl">getRealUrl</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isJson">isJson</a></li><li><a href="global.html#isMobilePhone">isMobilePhone</a></li><li><a href="global.html#isNull">isNull</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isUndefined">isUndefined</a></li><li><a href="global.html#navigateBack">navigateBack</a></li><li><a href="global.html#navigateTo">navigateTo</a></li><li><a href="global.html#numberFixedFen">numberFixedFen</a></li><li><a href="global.html#numberFixedYuan">numberFixedYuan</a></li><li><a href="global.html#numberFormat">numberFormat</a></li><li><a href="global.html#objectAssign">objectAssign</a></li><li><a href="global.html#objectForEach">objectForEach</a></li><li><a href="global.html#objectMap">objectMap</a></li><li><a href="global.html#parse">parse</a></li><li><a href="global.html#parseMessage">parseMessage</a></li><li><a href="global.html#redirectTo">redirectTo</a></li><li><a href="global.html#selectKeys">selectKeys</a></li><li><a href="global.html#setGlobalOptions">setGlobalOptions</a></li><li><a href="global.html#setSocketGlobalOptions">setSocketGlobalOptions</a></li><li><a href="global.html#setUrlMirror">setUrlMirror</a></li><li><a href="global.html#startWith">startWith</a></li><li><a href="global.html#stringify">stringify</a></li><li><a href="global.html#stringifyMessage">stringifyMessage</a></li><li><a href="global.html#stringTrim">stringTrim</a></li><li><a href="global.html#stringTrimLeft">stringTrimLeft</a></li><li><a href="global.html#stringTrimRight">stringTrimRight</a></li><li><a href="global.html#toInt">toInt</a></li><li><a href="global.html#toIntBool">toIntBool</a></li><li><a href="global.html#toJson">toJson</a></li><li><a href="global.html#toNonNegativeInteger">toNonNegativeInteger</a></li><li><a href="global.html#toStr">toStr</a></li><li><a href="global.html#urlMirror">urlMirror</a></li><li><a href="global.html#zipCDNImage">zipCDNImage</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	
+	
+
+
+
+    <h3>@2dfire/utils 0.2.64</h3>
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+    <section class="readme-section">
+        <article><h1>通用工具库</h1><p>通用工具库(文档待完善)</p>
+<h2>Installation</h2><pre class="prettyprint source lang-shell"><code>$ npm i @2dfire/utils --save-dev</code></pre><p><em>@2dfire为私库前缀，请参考<a href="http://npm.2dfire.net:4000/2017/04/25/plibrary_use/">npm私库使用办法</a></em></p>
+<h2>Usage</h2><pre class="prettyprint source lang-js"><code>// 引入所有
+import Utils, { object, localStorage } from &quot;@2dfire/utils&quot;; // 打包 utils 所有文件进来
+
+Utils.object.clone({ foo: 1 });
+object.clone({ foo: 1 });
+
+// 引入utils/object
+import object, { clone } from &quot;@2dfire/utils/object&quot;; // 只会打包 object.js进来
+
+object.clone({ foo: 1 });
+clone({ foo: 1 });</code></pre><p><em>小程序打包兼容代码设置办法</em></p>
+<p>在业务中依然用<code>@2dfire/utils</code>，在业务的<code>webpack</code>添加<code>alias</code>如下:</p>
+<pre class="prettyprint source lang-js"><code>module.exports = {
+  resolve: {
+    alias: {
+      &quot;@2dfire/utils&quot;: &quot;@2dfire/utils/wxApp&quot;
+    }
+  }
+};</code></pre><h2>目录说明</h2><pre class="prettyprint source"><code>    src             开发目录
+    build           webpack打包相关
+    test            测试相关</code></pre><h2>内容说明</h2><h3>一级工具目录说明</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">工具集</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">index</td>
+<td style="text-align:left">所有工具集合/ main</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+<tr>
+<td style="text-align:left">array</td>
+<td style="text-align:left">数组类型相关方法</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">date</td>
+<td style="text-align:left">日期类型相关方法</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">object</td>
+<td style="text-align:left">object和其他所有类型相关方法</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">string</td>
+<td style="text-align:left">字符串类型相关方法</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">number</td>
+<td style="text-align:left">数字类型相关方法</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">route</td>
+<td style="text-align:left">路由相关方法</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+<tr>
+<td style="text-align:left">qs</td>
+<td style="text-align:left">url参数获取相关方法</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">URL相关方法</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+<tr>
+<td style="text-align:left">validate</td>
+<td style="text-align:left">验证相关方法</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">seesionStorage</td>
+<td style="text-align:left">seesionStorage相关方法</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+<tr>
+<td style="text-align:left">localStorage</td>
+<td style="text-align:left">localStorage相关方法</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+<tr>
+<td style="text-align:left">cookie</td>
+<td style="text-align:left">cookie相关方法</td>
+<td style="text-align:left">包括小程序版本</td>
+</tr>
+</tbody>
+</table>
+<p><code>storage &amp; cookie</code>说明一起都在下方，其它辅助方法文档可以访问<a href="http://10.1.6.28:2233/fed/static/doc/@2dfire/utils/0.0.4/global.html">这里</a></p>
+<h3>storage &amp; cookie</h3><h4>apis</h4><p>各平台的storage &amp; cookie都实现这六个方法：</p>
+<ul>
+<li><code>set(name, value, [attributes]</code>): 将属性设置到Storage,设置前JSON.stringify。<em>无返回</em></li>
+<li><code>setItem(name, value, [attributes])</code>: 将属性设置到storage。<em>无返回</em></li>
+<li><code>get(name)</code>: 从storage获取属性，并且JSON.parse。<em>返回取到的值进行JSON.parse()转化后的值</em></li>
+<li><code>getItem(name)</code>: 从storage获取属性。<em>返回取到的值</em></li>
+<li><code>removeItem(name, [attributes])</code>: 从storage移除属性。<em>无返回</em></li>
+<li><code>clear([attributes])</code>: 清空storage。<em>无返回</em></li>
+</ul>
+<p><em>参数说明</em></p>
+<ul>
+<li>name: String 设置名称,会被转换为字符串</li>
+<li>value<ul>
+<li>setItem: String,其余类型值会被转为String</li>
+<li>set: Any 值,全部JSON.stringify</li>
+</ul>
+</li>
+<li>attributes: cookie属性<ul>
+<li>expires: 过期时间 单位天</li>
+<li>path: 地址如'/shop/page'</li>
+<li>domain: 域</li>
+<li>secure: 是否需要https</li>
+</ul>
+</li>
+</ul>
+<p><em>attributes实际上只有在web下起作用，小程序环境下cookie是假的，保存在内存中，如果需要长久存储，请选择localStorage</em></p>
+<p><strong>推荐：在已知类型情况下</strong>，使用<code>set</code>和<code>get</code>。如果未知类型，可能其它地方设置了，
+请使用<code>setItem</code>、<code>getItem</code>，来设置获取字符串。</p>
+<h4>各平台下api实际实现情况说明</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">平台</th>
+<th style="text-align:left">实现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">seesionStorage</td>
+<td style="text-align:left">web</td>
+<td style="text-align:left">正常</td>
+</tr>
+<tr>
+<td style="text-align:left">localStorage</td>
+<td style="text-align:left">web</td>
+<td style="text-align:left">正常</td>
+</tr>
+<tr>
+<td style="text-align:left">cookie</td>
+<td style="text-align:left">web</td>
+<td style="text-align:left">正常, 使用 js-cookie 库</td>
+</tr>
+<tr>
+<td style="text-align:left">seesionStorage</td>
+<td style="text-align:left">小程序</td>
+<td style="text-align:left">保存在内存中</td>
+</tr>
+<tr>
+<td style="text-align:left">localStorage</td>
+<td style="text-align:left">小程序</td>
+<td style="text-align:left">wx的Storage</td>
+</tr>
+<tr>
+<td style="text-align:left">cookie</td>
+<td style="text-align:left">小程序</td>
+<td style="text-align:left">保存在内存中</td>
+</tr>
+</tbody>
+</table>
+<h4>example</h4><pre class="prettyprint source lang-js"><code>import storage from '@2dfire/utils/localStorage';
+
+storage.set('coolName', { a: 'booo' }); // values: { a: '&quot;booo&quot;'}
+// 和原生Storage(e.g. localStorage) getItem一致
+storage.getItem('coolName'); // String: '{&quot;a&quot;:&quot;booo&quot;}'
+// 将通过JSON.parse转化为对象,如果回去到的值不为JSON字符串，则throw Uncaught SyntaxError
+storage.get('coolName'); // Object: { a: 'booo' }
+
+storage.setItem('coolName', { a: 'booo' }); // 和原生Storage(e.g. localStorage) setItem一致
+storage.getItem('coolName'); // String: '[object Object]'
+storage.get('coolName'); // throw Uncaught SyntaxError
+
+storage.getItem('unsetName'); // null 这里和原生Storage的getItem一致，原生返回null</code></pre><h2>TODOs</h2><h2>功能</h2><ul>
+<li>globalBasePage</li>
+<li>analytics</li>
+</ul>
+<h3>单元测试</h3><blockquote>
+<p>cover: 97.41% Statements 113/116 92.31% Branches 48/52 96.67% Functions 29/30 97.41% Lines 113/116</p>
+</blockquote>
+<ul>
+<li>[x] base<ul>
+<li>[x] array.js</li>
+<li>[x] date.js</li>
+<li>[x] object.js</li>
+<li>[x] qs.js</li>
+<li>[x] string.js</li>
+<li>[x] number.js</li>
+<li>[x] url.js</li>
+<li>[x] validate.js</li>
+</ul>
+</li>
+<li>[x] utils<ul>
+<li>[x] createStorage.js</li>
+</ul>
+</li>
+<li>[ ] platforms<ul>
+<li>[ ] web<ul>
+<li>[ ] ajax.js</li>
+<li>[ ] analytics.js</li>
+<li>[x] cookie.js</li>
+<li>[x] promise.js</li>
+<li>[ ] globalBasePage.js</li>
+<li>[x] localStorage.js</li>
+<li>[x] location.js</li>
+<li>[x] sessionStorage.js</li>
+<li>[ ] window.js</li>
+</ul>
+</li>
+<li>[ ] wxApp 暂时没有办法单元测试<ul>
+<li>[ ] ajax.js</li>
+<li>[ ] analytics.js</li>
+<li>[ ] cookie.js</li>
+<li>[x] promise.js</li>
+<li>[ ] globalBasePage.js</li>
+<li>[ ] localStorage.js</li>
+<li>[ ] location.js</li>
+<li>[ ] query.js</li>
+<li>[ ] sessionStorage.js</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] router.js</li>
+<li>[ ] fetch.js</li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
+	
+		on 2018-01-16T14:37:15+08:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

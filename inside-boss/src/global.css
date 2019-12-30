@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 1;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+input[type="button"]:focus {
+  outline: none;
+  border: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ul,
+ol,
+li {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+em,
+strong,
+i,
+b {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  clear: both;
+  *zoom: 1;
+}
+
+.ant-checkbox-wrapper {
+  margin-bottom: 10px;
+}
+
+td .ant-form-item {
+  margin-bottom: 0px !important;
+}
+
+.ant-modal {
+  /* top: 40% */
+}
+
+.ant-message-notice-content {
+  width: 200px;
+  height: 72px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  color: white;
+  /* margin-top: 35%; */
+  background: rgba(0, 0, 0, 0.6) !important;
+  /* line-height: 25px !important */
+}
+
+.ant-message-success {
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.ant-message {
+  top: 50% !important;
+  /* transform: translateY(-50%); */
+}
+
+.anticon-check-circle:before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url('https://assets.2dfire.com/frontend/b806855f5a955605deda354a7ea07d0e.png');
+  background-size: cover;
+}
+
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: -50px;
+  top: 17px;
+}
+
+.ant-input {
+  width: auto
+}
+
+.add_combined_goods_box___27ZM1 .ant-pagination {
+  float: left !important
+}

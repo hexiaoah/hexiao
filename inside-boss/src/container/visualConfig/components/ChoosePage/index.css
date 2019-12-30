@@ -1,0 +1,16 @@
+.wrap :global(.ant-select) {
+    min-width: 110px;
+    display: block;
+}
+.wrap :global(.ant-select-selection-selected-value) {
+    float: none;
+    font-size: 14px;
+    padding-right: 18px;
+    text-align: center;
+}
+.wrap :global(.ant-select-selection__rendered):after {
+    display: none;
+}
+.wrap :global(.ant-select):not(:global(.ant-select-disabled)) {
+    color: #333;
+}

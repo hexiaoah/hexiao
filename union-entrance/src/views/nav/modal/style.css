@@ -1,0 +1,113 @@
+.modal-mask{
+    position: fixed;
+    z-index: 120;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0,0,0,.5);
+}
+
+.modal-wrap{
+    display: none;
+    width: 400px;
+    /* height: 200px; */
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    /* top:50%; */
+    margin: 250px 0 0 -200px;
+}
+.modal-top{
+    width: 100%;
+    font-size: 16px;
+    color: #1c2438;
+    padding:15px 20px;
+    font-weight: bold;
+}
+.modal-content{
+    text-indent: 1em;
+    width: 100%;
+    padding:10px 20px;
+}
+.modal-fork{
+    display: inline-block;
+    background: #2d8cf0;
+    width: 30px;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.modal-text{
+    font-size: 16px;
+    position: relative;
+    bottom:5px;
+}
+.modal-bottom{
+    margin-top: 40px;
+    text-align: right;
+}
+.modal-btn{
+    cursor: pointer;
+    background: #D83F3F;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    outline: none;
+}
+.message-mask {
+    position: fixed;
+    display: none;
+    height: 52px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1010;
+    width: 100%;
+    top: -100px;
+    left: 0;
+}
+
+.message-wrap{
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    background: #fff;
+}
+
+.animated {
+    animation-duration: .6s;
+    animation-fill-mode: both;
+  }
+
+@keyframes fadeInDown {
+    from {
+      /* opacity: 0; */
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      /* opacity: 1; */
+      transform: none;
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+
+
+
+
+
+ 

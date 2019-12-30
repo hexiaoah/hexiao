@@ -1,0 +1,14 @@
+.backgroundPreview{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+.priewBackground{
+    width: 106px;
+    height: 40px;
+    background-image: linear-gradient(-180deg, #FDFDFD 0%, #F5F5F5 100%);
+    border: 1px solid #B4B4B4;
+    border-radius: 29.5px;
+    font-size: 12px;
+    color: #9B9B9B;
+}

@@ -1,0 +1,11 @@
+/* 引用公共样式和方法 */
+@import "../../../base/styles/library";
+
+
+.wrapper-account-message {
+    padding: 40px;
+    .message {
+        font-size: 28PX;
+        color: red;
+    }
+}

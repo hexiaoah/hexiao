@@ -1,0 +1,3 @@
+- easy 变量检查+常用globals
+- index 变量检查+常用globals+es6+import+node
+- strict

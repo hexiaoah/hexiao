@@ -1,0 +1,72 @@
+.wrapper {
+    left: 405px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -5px;
+    width: 400px;
+}
+
+.inner {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.10);
+}
+.wrapper.arrow .inner::before {
+    border: solid transparent;
+    border-color: transparent;
+    border-right-color: #fff;
+    border-width: 7px;
+
+    content: " ";
+    height: 0;
+    margin-top: -7px;
+    pointer-events: none;
+    position: absolute;
+    right: 100%;
+    top: 55px;
+    width: 0;
+}
+
+
+.header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    padding: 11px 15px;
+    align-items: center;
+}
+.desc {
+    color: #5a5a5a;
+    flex: 1;
+    font-size: 14px;
+    margin-right: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.moveUp, .moveDown, .leave {
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 17px;
+    padding: 0 10px;
+    width: 15px;
+}
+.moveUp {
+    background-image: url('https://assets.2dfire.com/frontend/64b9a6c54a146315fa099b1d0c160f8f.png');
+}
+.moveDown {
+    background-image: url('https://assets.2dfire.com/frontend/c243d427abc7252258763498a31cbf34.png');
+}
+.leave {
+    background-image: url('https://assets.2dfire.com/frontend/963140a684fe76d46bc2891fa4d0808d.png');
+    margin-right: -10px;
+}
+
+
+.body {
+    font-size: 12px;
+    padding: 25px 30px;
+}

@@ -1,0 +1,28 @@
+.loading, .loadFailed, .canNotConfig {
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+
+.loading {
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.loadFailed {
+    color: #444;
+    padding: 0 2em;
+}
+
+.canNotConfig img {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.canNotConfig .text {
+    color: #666;
+    font-size: 16px;
+    padding: 0 2em;
+}

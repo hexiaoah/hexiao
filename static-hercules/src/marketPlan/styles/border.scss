@@ -1,0 +1,51 @@
+@mixin _border {
+  position: relative;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+}
+
+.border-top {
+  @include _border;
+  &:before {
+    border-top: 1PX solid #ccc;
+  }
+}
+
+.border-bottom {
+  @include _border;
+  &:before {
+    border-bottom: 1PX solid #ccc;
+  }
+}
+
+.border-left {
+  @include _border;
+  &:before {
+    border-left: 1PX solid #ccc;
+  }
+}
+
+.border-right {
+  @include _border;
+  &:before {
+    border-right: 1PX solid #ccc;
+  }
+}
+
+.border-all {
+  @include _border;
+  &:before {
+    border: 1PX solid #ccc;
+  }
+}

@@ -1,0 +1,143 @@
+.main_wrapper {
+  min-height: 900px;
+  width: 100%;
+  padding: 30px 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+  margin-bottom: 60px;
+}
+.content_wrapper {
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(202, 202, 202, 0.26);
+}
+.switch_wrapper {
+  line-height: 66px;
+  padding: 0 17px;
+  font-size: 18px;
+  color: #3c4144;
+}
+.switch {
+  margin-left: 20px;
+}
+.switch.ant-switch-checked {
+  background: #00a854;
+}
+.btn_wrapper {
+  margin: 30px 0;
+  text-align: center;
+}
+.btn_wrapper button {
+  border: 1px solid #d83f3f;
+  border-radius: 4px;
+  line-height: 44px;
+  height: 44px;
+  margin: 0 5px;
+}
+.btn_back {
+  width: 88px;
+  color: #d83f3f;
+}
+.btn_save {
+  width: 240px;
+}
+.store_wrapper {
+  margin: 0 20px;
+  padding-bottom: 30px;
+}
+.title{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.btn_add_store,.btn_clear_store{
+  border-radius: 100px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn_add_store {
+  font-size: 12px;
+  color: #d83f3f;
+  border: 1px solid #d83f3f;
+}
+.btn_add_store:before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 30px;
+  margin-right: 5px;
+  background: url("https://assets.2dfire.com/frontend/28758bb63a2df2f4d3c945a759c3915f.png") no-repeat center;
+  background-size: 100%;
+  vertical-align: top;
+}
+.btn_clear_store{
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 61px;
+  float: right;
+  transition:all .2s;
+}
+.btn_clear_store:hover{
+  /*border: 1px solid #D83F3F;*/
+}
+.btn_clear_store:before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 30px;
+  margin-right: 5px;
+  background: url("https://assets.2dfire.com/frontend/7155ddc35a5f4fca12b1a2b9a3edd1cc.png") no-repeat center;
+  background-size: 100%;
+  vertical-align: top;
+}
+.store_list{
+  border: 1px solid #E6E6E6;
+  padding: 5px;
+  min-height: 80px;
+}
+.store_list li{
+  border: 1px solid #F1F1F1;
+  width: 210px;
+  line-height: 0;
+  text-align: center;
+  margin: 10px;
+  background: #F1F1F1;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .2s;
+  position: relative;
+}
+.store_list li span{
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  line-height: 40px;
+  text-overflow:ellipsis;
+  cursor: pointer;
+}
+.store_list .store_list_active{
+  background: #FCEEEE;
+  border: 1px solid #D83F3F;
+  position: relative;
+  cursor: auto;
+}
+.store_list li i{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #D83F3F url("https://assets.2dfire.com/frontend/085360e73cf9bbab4e8906f2e519fad8.png") no-repeat center;
+  background-size: 100%;
+  cursor: pointer;
+  transform: scale(0,0);
+  transition: all .2s;
+}
+.store_list .store_list_active i{
+  transform: scale(1,1);
+}

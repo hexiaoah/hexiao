@@ -1,0 +1,224 @@
+.loading {
+    color: #333;
+}
+
+
+.templates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.template {
+    background-color: #fafafa;
+    border-radius: 1px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    padding: 30px 28px;
+    position: relative;
+}
+.pageManage{
+    padding: 16px;
+    background: #fff;
+}
+.addPage{
+    margin-bottom: 16px;
+}
+.subscript {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+}
+
+.preview {
+    width: 300px;
+    height: 533px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.info {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    width: 300px;
+}
+.name {
+    color: #aaa;
+    flex: 1;
+    font-size: 14px;
+    margin-right: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.useBtn {
+    background-color: #d83f3f;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 6px 30px;
+    text-align: center;
+    user-select: none;
+}
+.useBtn:active {
+    background-color: #c72f2f;
+}
+.btn{
+    display: inline-block;
+    margin-right:10px;
+    width: 66px;
+    height: 28px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    background: #D83F3F;
+}
+.closeBtn{
+    background: #fff;
+    color: #666;
+    border: 1px solid#B4B4B4;
+    border-radius: 14px;
+}
+.modalContent{
+    padding: 44px 14px 14px;
+}
+.tab{
+    font-size: 0;
+    line-height: 28px;
+}
+.tabMargin{
+    margin:24px 0 21px;
+    height: 100px;
+}
+.tab .tabname{
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    color: #333333;
+    font-size: 12px;
+}
+.priewInput{
+    display: inline-block;
+    vertical-align: top;
+    width: 279px;
+    padding: 0 7px 0 11px;
+    font-size: 0;
+    line-height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #D8D8D8;
+  }
+  .priewInput .input{
+    display: inline-block;
+    vertical-align: top;
+    width: 228px;
+    padding: 0;
+    height: 28px;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+  }
+  .priewInput .wordNumber{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #B4B4B4;
+  }
+  .priewTxtarea{
+    display: inline-block;
+    vertical-align: top;
+    width: 279px;
+    font-size: 0;
+    position: relative;
+  }
+  .priewTxtarea .textarea{
+    display: inline-block;
+    vertical-align: top;
+    width: 279px;
+    height: 56px;
+    font-size: 12px;
+    resize:none;
+    padding: 0 7px 0 11px;
+    background-color: transparent;
+    background: #FAFAFA;
+    border: 1px solid #D8D8D8;
+  }
+  .priewTxtarea .wordNumber{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #B4B4B4;
+    position: absolute;
+    right: 10px;
+    top: 30px;;
+  }
+   .text{
+    font-size: 12px;
+    color: #B4B4B4;
+  }
+  .imgLoad{
+    display: inline-block;
+    vertical-align: top;
+    width: 342px;
+    height: 102px;
+  }
+  .imgLoad :global(.ant-upload.ant-upload-drag ){
+    width: 342px;
+    height: 102px;
+  }
+  .imgLoad :global(.ant-upload-list ){
+    display: none
+  }
+  .adImg{
+    width: 171px;
+    height: 50px;
+  }
+  .imgLoad .imgBtn{
+      width: 340px;
+      height: 100px;
+      cursor: pointer;
+  }
+  .EditInfo{
+    padding: 10px 0;
+  }
+  .picturEdit .EditInfo{
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+  }
+  .picturLink{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .picturEditor{
+      display: block;
+  }
+  .picturEditor .text{
+    display: inline-block;
+    vertical-align: top;
+    width: 36px;
+    font-size: 12px;
+  }
+  .save{
+    padding-top: 200px;
+    width: 100%;
+    text-align: center;
+  }
+  .picturRelation{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .link{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #48ACFF;
+  }
+  .link a{
+    color: #48ACFF;
+  }

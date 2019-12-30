@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      "@2dfire/eslint-config-2dfire@1.0.9",
+      "C:\\Users\\DELL\\Desktop\\myproject\\inside-chain"
+    ]
+  ],
+  "_development": true,
+  "_from": "@2dfire/eslint-config-2dfire@1.0.9",
+  "_id": "@2dfire/eslint-config-2dfire@1.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-1WYbQAkJ24vIIfCWNLxmqwzvc8Uyi1XhdA4/XBftKMY8X6Cminetkzu2CKShmpYasZNy74fRfyuoygzSuGIgBg==",
+  "_location": "/@2dfire/eslint-config-2dfire",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@2dfire/eslint-config-2dfire@1.0.9",
+    "name": "@2dfire/eslint-config-2dfire",
+    "escapedName": "@2dfire%2feslint-config-2dfire",
+    "scope": "@2dfire",
+    "rawSpec": "1.0.9",
+    "saveSpec": null,
+    "fetchSpec": "1.0.9"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "http://npm.2dfire.net/@2dfire%2feslint-config-2dfire/-/eslint-config-2dfire-1.0.9.tgz",
+  "_spec": "1.0.9",
+  "_where": "C:\\Users\\DELL\\Desktop\\myproject\\inside-chain",
+  "author": {
+    "name": "炒饭",
+    "email": "chaofan@2dfire.com"
+  },
+  "bugs": {
+    "url": "http://git.2dfire-inc.com/chaofan/javascript/issues"
+  },
+  "contributors": [],
+  "dependencies": {
+    "@2dfire/eslint-config-2dfire-base": "^1.0.14",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-vue": "^2.1.0"
+  },
+  "description": "🤖二维火基础JS ESLint config, following our styleguide, base on eslint-config-airbnb",
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.19.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-vue": "^2.1.0",
+    "in-publish": "^2.0.0",
+    "react": ">= 0.13.0",
+    "safe-publish-latest": "^1.1.1",
+    "tape": "^4.7.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "homepage": "http://git.2dfire-inc.com/chaofan/javascript",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "2dfire",
+    "javascript",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@2dfire/eslint-config-2dfire",
+  "optionalDependencies": {
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-vue": "^2.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.2dfire-inc.com/chaofan/javascript"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "posttravis": "npm unlink eslint-config-2dfire-base >/dev/null &",
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "pretest": "npm run --silent lint",
+    "pretravis": "cd ../eslint-config-2dfire-base && npm install && npm link && cd - && npm link --no-save eslint-config-2dfire-base",
+    "push": "npm publish --registry http://10.1.6.28",
+    "test": "npm run --silent tests-only",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "travis": "npm run --silent test"
+  },
+  "version": "1.0.9"
+}

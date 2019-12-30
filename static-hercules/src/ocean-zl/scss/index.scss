@@ -1,0 +1,373 @@
+html {
+  background-image: url(https://assets.2dfire.com/frontend/2a09d96ab1a27c8475b4e53f6f6132a0.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.border-f,
+.border-b,
+.border-t,
+.border-l,
+.border-r {
+  position: relative;
+}
+
+.border-f:before,
+.border-b:before,
+.border-t:before,
+.border-l:before,
+.border-r:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.border-f:before {
+  border: 1px solid #ccc;
+}
+
+.border-b:before {
+  border-bottom: 1px solid #ccc;
+}
+
+.border-t:before {
+  border-top: 1px solid #ccc;
+}
+
+.border-l:before {
+  border-left: 1px solid #ccc;
+}
+
+.border-r:before {
+  border-right: 1px solid #ccc;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .border-f:before,
+  .border-b:before,
+  .border-t:before,
+  .border-l:before,
+  .border-r:before {
+    width: 200%;
+    height: 200%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+  }
+}
+
+.m-r {
+  margin-right: 15px;
+}
+
+.m-t {
+  margin-top: 15px;
+}
+
+.m-b {
+  margin-bottom: 15px;
+}
+
+.m-l {
+  margin-left: 15px;
+}
+
+.m-r {
+  margin-right: 15px;
+}
+
+.m-t-small {
+  margin-top: 10px;
+}
+
+.m-b-small {
+  margin-bottom: 10px;
+}
+
+.m-l-small {
+  margin-left: 10px;
+}
+
+.m-r-small {
+  margin-right: 10px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.relative {
+  position: relative;
+  z-index: 1;
+}
+
+.error-toast {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  width: 180px;
+  line-height: 20px;
+  padding: 22px;
+  color: white;
+  text-align: center;
+  z-index: 120;
+  border-radius: 13px;
+  font-size: 15px;
+}
+
+.input-wrapper {
+  input::-webkit-input-placeholder,
+  input:disabled::-webkit-input-placeholder {
+    text-align: right;
+    font-size: 14px;
+    color: #ff0033;
+    letter-spacing: 0;
+  }
+
+  input::-moz-placeholder,
+  input:disabled::-moz-placeholder {
+    text-align: right;
+    font-size: 14px;
+    color: #ff0033;
+    letter-spacing: 0;
+  }
+
+  input:-ms-input-placeholder,
+  input:disabled:-ms-input-placeholder {
+    text-align: right;
+    font-size: 14px;
+    color: #ff0033;
+    letter-spacing: 0;
+  }
+
+  .main {
+    input[type='text'],
+    input[type='tel'],
+    input[type='number'],
+    input[type='email'] {
+      border: 0;
+      display: inline-block;
+      line-height: 44px;
+      width: 100%;
+      padding: 0;
+      vertical-align: top;
+      text-align: right;
+      outline: 0;
+      color: #0088ff;
+      opacity: 1;
+      font-size: 14px;
+      &:disabled {
+        background: transparent;
+      }
+    }
+    i.closeicon {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background-size: cover;
+      margin: 14px 0 0 5px;
+      vertical-align: top;
+      background-image: url(https://assets.2dfire.com/frontend/cb35d2e0f3e58940fa7ae6e50ff2f7e2.png);
+    }
+    .h3 {
+      margin: 36px 15px 10px;
+      font-size: 15px;
+      color: #333333;
+      line-height: 20px;
+      font-weight: 600;
+    }
+    .input-main {
+      background: #ffffff;
+      //border-top: 1px solid #CCCCCC;
+      //border-bottom: 1px solid #CCCCCC;
+      padding: 0 0 0 15px;
+      z-index: 0;
+      .input-list {
+        line-height: 44px;
+        font-size: 15px;
+        color: #333333;
+        letter-spacing: 0;
+        //border-bottom: 1px solid #ccc;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        padding-right: 15px;
+        z-index: 0;
+        &:last-child {
+          border-bottom: 0;
+        }
+        &.no-input {
+          .content {
+            color: #666;
+          }
+        }
+        &.no-edit {
+          .content {
+            color: #999;
+          }
+        }
+        &.photo {
+          display: block;
+          .content {
+            color: #999;
+          }
+          &.required .content {
+            color: #ff0033;
+          }
+        }
+        .content {
+          text-align: right;
+          flex: 1;
+        }
+        &.input-choose {
+          .content {
+            padding-right: 18px;
+            background: url(https://assets.2dfire.com/frontend/ac8cf450249c33a8aa8cfa19ddd8a977.png)
+              no-repeat right center;
+            background-size: 8px;
+          }
+        }
+        .name {
+          display: flex;
+        }
+      }
+      // 下方注释
+      .explain {
+        font-size: 13px;
+        color: #ff0033;
+        padding-bottom: 12px;
+
+        &.none {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  .btn-submit {
+    opacity: 0.9;
+    background: #0088ff;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+    width: 300px;
+    border: 0;
+    outline: 0;
+    display: block;
+    margin: 36px auto 0;
+  }
+}
+
+.upload-photo {
+  .hint {
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-right: -15px;
+    //border-bottom: 1PX solid #ccc;
+    padding-bottom: 10px;
+    &.none {
+      padding-bottom: 0;
+    }
+    &.titleColorRed {
+      color: #ff0033;
+      font-size: 14px;
+    }
+  }
+  .content {
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 10px 0;
+
+    &.pt0 {
+      padding-top: 0;
+    }
+  }
+
+  .camera-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 160px;
+    background: rgba(204, 204, 204, 0.1);
+    margin: 10px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    //background-attachment: fixed;
+    .photoimg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    &:before {
+      border-style: dashed;
+    }
+
+    .camera {
+      padding-top: 52px;
+      text-align: center;
+      font-size: 0;
+
+      img {
+        width: 38px;
+        height: 30px;
+      }
+
+      span {
+        font-size: 15px;
+        color: #999999;
+        line-height: 20px;
+        vertical-align: 8px;
+        margin-left: 13px;
+      }
+    }
+    .removeImg {
+      position: absolute;
+      background-image: url(https://assets.2dfire.com/frontend/ae288cfb7ec950a88b43a9cb390cb973.png);
+      background-position: 50%;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      display: block;
+      top: 10px;
+      right: 10px;
+      z-index: 90;
+    }
+
+    .rule {
+      position: absolute;
+      left: 15px;
+      bottom: 10px;
+      font-size: 10px;
+      color: #999999;
+      letter-spacing: 0;
+      line-height: 12px;
+    }
+    input[type='file'] {
+      opacity: 0;
+    }
+  }
+}

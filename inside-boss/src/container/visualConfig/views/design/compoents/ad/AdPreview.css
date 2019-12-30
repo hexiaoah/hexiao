@@ -1,0 +1,59 @@
+
+.adPreview{
+  width: 375px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 1px;
+  position: relative;
+}
+.sigleImg{
+  width: 375px;
+}
+.defulatImg{
+  height: 172px;
+  width: 375px;
+  background: #EFF8FF;
+  font-size: 12px;
+  color: #48ACFF;
+  text-align: center;
+  padding-top: 1px;
+}
+.defulatImg p {
+  margin-top: 70px;
+}
+.title{
+  display: inline-block;
+  padding: 23px 40px 0 60px;
+  height: 64px;
+  line-height: calc(64px - 24px);
+  width: 100%;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+
+:global(.ant-carousel .slick-slide) {
+  text-align: center;
+  height: 172px;
+  background: #EFF8FF !important;
+  overflow: hidden;
+}
+:global(.ant-carousel .slick-dots) {
+  z-index: 3;
+}
+:global(.ant-carousel .slick-slide img) {
+  height: 172px;
+  width: 375px;
+  /* background: #fff; */
+}
+
+:global(.ant-carousel .slick-slide h3) {
+  color: #fff;
+  line-height: 172px;
+}

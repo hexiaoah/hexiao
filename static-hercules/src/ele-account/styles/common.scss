@@ -1,0 +1,101 @@
+@import "./border";
+
+body {
+  color: #333333;
+  background: url("https://assets.2dfire.com/frontend/72337c8e1aa9c469abe6629ba9cd5a14.jpg");
+  background-repeat: repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body .router-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+  z-index: 99;
+}
+
+.border {
+  background: #fff;
+  @extend .border-top;
+  @extend .border-bottom
+}
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.clear-fix {
+  overflow: hidden;
+}
+
+.c-666 {
+  color: #666;
+}
+
+.c-999 {
+  color: #999;
+}
+
+.c-ff0033 {
+  color: #ff0033;
+}
+
+.c-00cc33 {
+  color: #00cc33;
+}
+
+.c-666 {
+  color: #666;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-72 {
+  margin-top: 72px;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.animated {
+  -webkit-animation-duration: 400ms !important;
+  animation-duration: 400ms !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

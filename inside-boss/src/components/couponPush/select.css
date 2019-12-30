@@ -1,0 +1,39 @@
+.select_btn {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #e6e6e5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left:30px;
+    vertical-align: top;
+    margin-top: 4px;
+    /*line-height: 40px;*/
+}
+
+.sel_text, .options_left {
+    float: left;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon {
+    float: right;
+    padding-top: 3px;
+}
+
+.options_right {
+    float: right;
+}
+
+.dropdown_wrapper {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.dropdown_item {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+}

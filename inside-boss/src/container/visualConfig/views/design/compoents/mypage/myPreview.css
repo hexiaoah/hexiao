@@ -1,0 +1,182 @@
+/*居中样式*/
+.member_center_container {
+    width: 375px;
+    height: 625px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333333;
+    background-color: #fff;
+}
+.member_info {
+    overflow: hidden;
+    width: 100%;
+    height: 137px;
+    background: transparent url('https://assets.2dfire.com/frontend/7e3acad2ea51faf0ae87be9967a47506.png') center center no-repeat;
+}
+.member_avator {
+    display: block;
+    margin: 20px auto 0;
+    width: 50px;
+    height: 50px;
+}
+.member_name {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+.member_list_box {
+    position: relative;
+    top: -10px;
+    /*margin-top: 10px;*/
+    /*border-radius: 8px 8px 0px 0px;*/
+}
+.member_list_radius {
+    border-radius: 8px 8px 0px 0px;
+    background: #fff;
+}
+.member_item {
+    position: relative;
+    height: 55px;
+    line-height: 55px;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.member_item:after {
+    content: "";
+    background: transparent url(http://assets.2dfire.com/frontend/b2c2a9444193c842b0b01cb06e8f7020.png) center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 10px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+}
+.member_list_wrapper {
+    padding: 0 16px;
+}
+.member_order_box {
+
+}
+.member_order_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+}
+.member_order_item {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.order_item_icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    transform: scale(.5);
+}
+.item_agent {
+    background: #fff url(https://assets.2dfire.com/frontend/7e02fd5ce8e2036ff9289bcc6a6950fc.png) 10px center no-repeat;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+}
+
+.member_r0:after {
+    right: 0;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 5px;
+}
+
+.left_member_info {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 100%;
+    height: 137px;
+    background: #fff url('https://assets.2dfire.com/frontend/7e3acad2ea51faf0ae87be9967a47506.png') center center no-repeat;
+}
+.left_member_info:after {
+    content: "";
+    background: transparent url(//assets.2dfire.com/frontend/0cfc5a6291783cfc6a945a33355ef2f1.png) center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 10px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    right: 16px;
+    transform: rotate(180deg);
+    margin-top: 40px;
+}
+.left_member_avator {
+    margin: 20px 0 0 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+.left_member_name {
+    margin: 35px 0 0 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+}
+.left_member_list_box {
+    position: relative;
+    top: -36px;
+    padding: 0 15px;
+}
+
+.left_member_item {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #eeeeee;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+    box-shadow: 0 0 6px 0 rgba(51,51,51,0.10);
+    border-radius: 4px;
+}
+
+.left_member_item:after {
+    content: "";
+    background: transparent url(http://assets.2dfire.com/frontend/b2c2a9444193c842b0b01cb06e8f7020.png) center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 10px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+}
+.left_member_box {
+    margin-top: 16px;
+    box-shadow: 0 0 6px 0 rgba(51,51,51,0.10);
+    border-radius: 4px;
+}
+.left_member_box .left_member_item {
+    box-shadow: none;
+    background-position: 10px center;
+}
+
+

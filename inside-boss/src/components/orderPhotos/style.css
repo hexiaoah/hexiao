@@ -1,0 +1,155 @@
+/*容器样式*/
+.wraperBox{
+    background:#f5f5f5;
+    min-height:900px;
+    width:100%;
+}
+.viewBox{
+    padding:20px;
+    width:100%;
+}
+.line{
+    height:1px;
+    border-top:1px solid #ededed;
+    width:100%;
+    margin:20px 0;
+}
+
+/*标题样式*/
+.select{
+    font-size:16px;
+}
+
+/*操作台样式*/
+.handleBox{
+    border:1px solid #e2e9e7;
+    background: #fff;
+    padding:20px 24px 12px 24px;
+}
+.t1{
+    clear: both;
+}
+.orderType{
+    display: inline-block;
+    height: 28px;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    margin-right: 20px;
+}
+.t2{
+    overflow: hidden;
+}
+.searchInput{
+    width:240px!important;
+    margin:4px 0 0 20px;
+}
+.date_start, .date_end, .status_text {
+    display: inline-block;
+    height: 32px;
+    font-size: 14px;
+    color: #333;
+    line-height: 32px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.submit{
+    margin-left:40px;
+    float: left;
+}
+.export_btn{
+    margin-left:200px;
+}
+/*订单列表*/
+.orderListBox{
+    margin-top:40px;
+    min-width: 1080px;
+    padding: 20px;
+    background: #fff;
+    border:1px solid #dbdbdb;
+}
+.orderListUl{
+    width:1440px;
+    margin-bottom:20px;
+}
+.orderTitle{
+    overflow: hidden;
+}
+.orderTitle p{
+    background: #e6e6e6;
+    float: left;
+    font-size:14px;
+    text-align: center;
+    line-height: 40px;
+    height:40px;
+    border:1px solid #c9c9c9;
+    border-right:none;
+}
+.orderTitle p:nth-of-type(1){
+    width:200px;
+}
+.orderTitle p:nth-of-type(2){
+    width:280px;
+}
+.orderTitle p:nth-of-type(3){
+    width:400px;
+}
+.orderTitle p:nth-of-type(4){
+    width:280px;
+}
+.orderTitle p:nth-of-type(5){
+    width:280px;
+    border-right:1px solid #c9c9c9;
+}
+.orderLi{
+    overflow: hidden;
+    background: #fff;
+}
+.orderLi p{
+    float: left;
+    font-size:14px;
+    text-align: center;
+    line-height: 440px;
+    height:440px;
+    border:1px solid #c9c9c9;
+    border-right:none;
+    border-top:none;
+}
+.orderLi p:nth-of-type(1){
+    width:200px;
+}
+.orderLi p:nth-of-type(2){
+    width:280px;
+}
+.orderLi p:nth-of-type(3){
+    width:400px;
+}
+.orderLi p:nth-of-type(4){
+    width:280px;
+}
+.orderLi p:nth-of-type(5){
+    width:280px;
+    border-right:1px solid #c9c9c9;
+}
+.orderLi p:nth-of-type(5) a{
+    margin-top:200px;
+    line-height: 20px;
+    word-break: break-all;
+    display: inline-block;
+}
+/*分页样式*/
+.paginationBox{
+    overflow: hidden;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.paginationHtml{
+    float: right;
+    margin-right:25px;
+}
+.paginationBox p{
+    height:28px;
+    line-height: 28px;
+    float: right;
+    margin-right:10px;
+}

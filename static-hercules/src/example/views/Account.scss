@@ -1,0 +1,13 @@
+/* 引用公共样式和方法 */
+@import "../../base/styles/library";
+
+
+.wrapper-account{
+    padding: 40px;
+    .account {
+        font-size: 28PX;
+        color: red;
+    }
+}
+
+

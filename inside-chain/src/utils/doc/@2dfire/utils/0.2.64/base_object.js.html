@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>@2dfire/utils Source: base/object.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">@2dfire/utils</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="imageUtil.html">imageUtil</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#arrayFind">arrayFind</a></li><li><a href="global.html#arrayFindIndex">arrayFindIndex</a></li><li><a href="global.html#arrayUnique">arrayUnique</a></li><li><a href="global.html#clone">clone</a></li><li><a href="global.html#createUrl">createUrl</a></li><li><a href="global.html#dFireFetch">dFireFetch</a></li><li><a href="global.html#dFireFetchWithoutGlobal">dFireFetchWithoutGlobal</a></li><li><a href="global.html#enterSocketRoom">enterSocketRoom</a></li><li><a href="global.html#extract">extract</a></li><li><a href="global.html#getGlobalOptions">getGlobalOptions</a></li><li><a href="global.html#getRealUrl">getRealUrl</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isJson">isJson</a></li><li><a href="global.html#isMobilePhone">isMobilePhone</a></li><li><a href="global.html#isNull">isNull</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isUndefined">isUndefined</a></li><li><a href="global.html#navigateBack">navigateBack</a></li><li><a href="global.html#navigateTo">navigateTo</a></li><li><a href="global.html#numberFixedFen">numberFixedFen</a></li><li><a href="global.html#numberFixedYuan">numberFixedYuan</a></li><li><a href="global.html#numberFormat">numberFormat</a></li><li><a href="global.html#objectAssign">objectAssign</a></li><li><a href="global.html#objectForEach">objectForEach</a></li><li><a href="global.html#objectMap">objectMap</a></li><li><a href="global.html#parse">parse</a></li><li><a href="global.html#parseMessage">parseMessage</a></li><li><a href="global.html#redirectTo">redirectTo</a></li><li><a href="global.html#selectKeys">selectKeys</a></li><li><a href="global.html#setGlobalOptions">setGlobalOptions</a></li><li><a href="global.html#setSocketGlobalOptions">setSocketGlobalOptions</a></li><li><a href="global.html#setUrlMirror">setUrlMirror</a></li><li><a href="global.html#startWith">startWith</a></li><li><a href="global.html#stringify">stringify</a></li><li><a href="global.html#stringifyMessage">stringifyMessage</a></li><li><a href="global.html#stringTrim">stringTrim</a></li><li><a href="global.html#stringTrimLeft">stringTrimLeft</a></li><li><a href="global.html#stringTrimRight">stringTrimRight</a></li><li><a href="global.html#toInt">toInt</a></li><li><a href="global.html#toIntBool">toIntBool</a></li><li><a href="global.html#toJson">toJson</a></li><li><a href="global.html#toNonNegativeInteger">toNonNegativeInteger</a></li><li><a href="global.html#toStr">toStr</a></li><li><a href="global.html#urlMirror">urlMirror</a></li><li><a href="global.html#zipCDNImage">zipCDNImage</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: base/object.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript ">import assign from 'object-assign';
+
+if (!Object.assign) {
+    Object.assign = assign;
+}
+
+/**
+ * 用于将所有可枚举的属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
+ * objectAssign(target, ...sources)
+ * @param  {Object} target    目标对象
+ * @param  {Object} sources   (多个)源对象
+ * @return {Object}
+ * @example
+ * objectAssign({ a: 1, b: 2 }, { a: 3, c: 4 }); // { a: 3, b: 2, c: 4 }
+ */
+const objectAssign = Object.assign;
+
+const prototypeToString = Object.prototype.toString;
+
+/**
+ * 测试是否是对象
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是,false表示不是
+ */
+function isObject(obj) {
+    return prototypeToString.call(obj) === "[object Object]"
+}
+
+/**
+ * 测试对象是否是纯粹的对象（通过 "{}" 或者 "new Object" 创建的）
+ * @alias isJson
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是,false表示不是
+ */
+function isPlainObject (obj) {
+    // 检查是否是对象
+    if (!isObject(obj)) {
+        return false;
+    }
+
+    const proto = Object.getPrototypeOf(obj);
+
+    // 如果对象没有prototype (e.g., `Object.create( null )`) 是简单对象
+    if (!proto) {
+        return true;
+    }
+
+    const hasOwn = Object.prototype.hasOwnProperty;
+
+    // 如果对象的constructor和全局Object的constructor相同(e.g. {})
+    const Ctor = hasOwn.call(proto, "constructor") &amp;&amp; proto.constructor;
+    return typeof Ctor === "function" &amp;&amp;
+        hasOwn.toString.call(Ctor) === hasOwn.toString.call(Object);
+}
+
+const isJson = isPlainObject;
+
+
+// Array 全局对象 的 isArray方法
+if (!Array.isArray) {
+    Array.isArray = function isArray (arg) {
+        return prototypeToString.call(arg) === '[object Array]';
+    };
+}
+
+/**
+ * 判断是否是数组
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是,false表示不是
+ */
+const isArray = Array.isArray;
+
+/**
+ * 判断是否是方法
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是方法,false表示不是
+ */
+function isFunction (v) {
+    return typeof v === 'function';
+}
+
+/**
+ * 判断是否是字符串
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是字符串,false表示不是
+ */
+function isString (v) {
+    return typeof v === 'string';
+}
+
+/**
+ * 判断是否是数字
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是数字,false表示不是
+ */
+function isNumber (v) {
+    return typeof v === 'number' &amp;&amp; v === v;
+}
+
+/**
+ * 判断是否是null
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是null,false表示不是
+ */
+function isNull (v) {
+    return v === null;
+}
+
+/**
+ * 判断是否是undefined
+ * @param  {Any}  v
+ * @return {Boolean}   true表示是undefined,false表示不是
+ */
+function isUndefined (v) {
+    return v === undefined;
+}
+
+/**
+ * 对象forEach方法
+ * @param  {Object}   obj
+ * @param  {Function} cb  将被循环执行
+ *      currentValue
+ *          callback 的第一个参数，数组中当前被传递的元素。
+ *      index
+ *          callback 的第二个参数，数组中当前被传递的元素的索引。
+ *      obj
+ *          callback 的第三个参数，调用 map 方法的对象。
+ * @return {Void}
+ */
+function objectForEach (obj, cb) {
+    const hasOwn = Object.prototype.hasOwnProperty;
+    for (const index in obj) {
+        if (hasOwn.call(obj, index)) {
+            cb.call(obj, obj[index], index, obj);
+        }
+    }
+}
+
+/**
+ * 对象map方法
+ * @param  {Object}   obj
+ * @param  {Function} cb  原数组中的元素经过该方法后返回一个新的元素。
+ *      currentValue
+ *          callback 的第一个参数，数组中当前被传递的元素。
+ *      index
+ *          callback 的第二个参数，数组中当前被传递的元素的索引。
+ *      obj
+ *          callback 的第三个参数，调用 map 方法的对象。
+ * @return {Object}
+ */
+function objectMap (obj, cb) {
+    const newObj = {};
+    objectForEach(obj, (currentValue, index) => {
+        newObj[index] = cb.call(obj, obj[index], index, obj);
+    });
+    return newObj;
+}
+
+/**
+ * 深层次clone
+ * @param  {Any} o 需要clone的对象
+ * @return {Any}   clone后的对象
+ */
+function clone(obj) {
+    if (isArray(obj)) {
+        return obj.map(clone);
+    }
+
+    // Handle Date
+    if (obj instanceof Date) {
+        return new Date(obj.getTime());
+    }
+
+    // 简单对象，挨个clone
+    if (isPlainObject(obj)) {
+        return objectMap(obj, clone);
+    }
+
+    // 以上之外，Function,Number,String,Boolean,null,undefined,非简单对象都直接返回
+    return obj;
+}
+
+/**
+ * isEmpty 是否为空
+ * @param  {obj} 任意对象
+ * @return {bol} true/false
+ */
+function isEmpty(obj) {
+
+    // null and undefined are "empty"
+    if (obj === null) return true;
+
+    if (obj === undefined) return true;
+
+    // Assume if it has a length property with a non-zero value
+    // that that property is correct.
+    if (typeof obj === "number") {
+        return obj.length === 0;
+    }
+    if (typeof obj === "string") {
+        return obj.length === 0;
+    }
+
+    // Otherwise, does it have any properties of its own?
+    // Note that this doesn't handle
+    // toString and valueOf enumeration bugs in IE &lt; 9
+    // bug:如果是Date类型,则总是会返回为空
+    if (typeof obj === "object") {
+        if (obj.length === undefined) {//对象
+            for (var key in obj) {
+                if (hasOwnProperty.call(obj, key)) return false;
+            }
+        } else {//数组
+            return obj.length === 0;
+        }
+    }
+
+    return true;
+}
+
+
+/**
+ * add by suanrong
+ * 使用obj中的ks组成新对象并返回
+ * @param obj Object
+ * @param ks [k1,k2,k3]
+ */
+function selectKeys(obj, ks){
+    obj = obj || {};
+    var ret = {};
+    for(var i = 0, len = ks.length; i &lt; len; i++){
+        ret[ks[i]] = obj[ks[i]];
+    }
+    return ret;
+}
+
+/**
+ * add by hupo
+ * 转换为string
+ */
+function toStr( v ){
+    if (v) {
+        return JSON.stringify(v);
+    }
+    return '';
+}
+
+export {
+    isObject,
+    isPlainObject,
+    isJson,
+    isArray,
+    isFunction,
+    isString,
+    isNumber,
+    isNull,
+    isUndefined,
+    objectForEach,
+    objectMap,
+    clone,
+    isEmpty,
+    selectKeys,
+    toStr,
+    objectAssign
+};
+
+export default {
+    isObject,
+    isPlainObject,
+    isJson,
+    isArray,
+    isFunction,
+    isString,
+    isNumber,
+    isNull,
+    isUndefined,
+    objectForEach,
+    objectMap,
+    clone,
+    isEmpty,
+    selectKeys,
+    toStr,
+    objectAssign
+};
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
+	
+		on 2018-01-16T14:37:15+08:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

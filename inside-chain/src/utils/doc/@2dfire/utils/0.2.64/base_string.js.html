@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>@2dfire/utils Source: base/string.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">@2dfire/utils</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="imageUtil.html">imageUtil</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#arrayFind">arrayFind</a></li><li><a href="global.html#arrayFindIndex">arrayFindIndex</a></li><li><a href="global.html#arrayUnique">arrayUnique</a></li><li><a href="global.html#clone">clone</a></li><li><a href="global.html#createUrl">createUrl</a></li><li><a href="global.html#dFireFetch">dFireFetch</a></li><li><a href="global.html#dFireFetchWithoutGlobal">dFireFetchWithoutGlobal</a></li><li><a href="global.html#enterSocketRoom">enterSocketRoom</a></li><li><a href="global.html#extract">extract</a></li><li><a href="global.html#getGlobalOptions">getGlobalOptions</a></li><li><a href="global.html#getRealUrl">getRealUrl</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isJson">isJson</a></li><li><a href="global.html#isMobilePhone">isMobilePhone</a></li><li><a href="global.html#isNull">isNull</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isUndefined">isUndefined</a></li><li><a href="global.html#navigateBack">navigateBack</a></li><li><a href="global.html#navigateTo">navigateTo</a></li><li><a href="global.html#numberFixedFen">numberFixedFen</a></li><li><a href="global.html#numberFixedYuan">numberFixedYuan</a></li><li><a href="global.html#numberFormat">numberFormat</a></li><li><a href="global.html#objectAssign">objectAssign</a></li><li><a href="global.html#objectForEach">objectForEach</a></li><li><a href="global.html#objectMap">objectMap</a></li><li><a href="global.html#parse">parse</a></li><li><a href="global.html#parseMessage">parseMessage</a></li><li><a href="global.html#redirectTo">redirectTo</a></li><li><a href="global.html#selectKeys">selectKeys</a></li><li><a href="global.html#setGlobalOptions">setGlobalOptions</a></li><li><a href="global.html#setSocketGlobalOptions">setSocketGlobalOptions</a></li><li><a href="global.html#setUrlMirror">setUrlMirror</a></li><li><a href="global.html#startWith">startWith</a></li><li><a href="global.html#stringify">stringify</a></li><li><a href="global.html#stringifyMessage">stringifyMessage</a></li><li><a href="global.html#stringTrim">stringTrim</a></li><li><a href="global.html#stringTrimLeft">stringTrimLeft</a></li><li><a href="global.html#stringTrimRight">stringTrimRight</a></li><li><a href="global.html#toInt">toInt</a></li><li><a href="global.html#toIntBool">toIntBool</a></li><li><a href="global.html#toJson">toJson</a></li><li><a href="global.html#toNonNegativeInteger">toNonNegativeInteger</a></li><li><a href="global.html#toStr">toStr</a></li><li><a href="global.html#urlMirror">urlMirror</a></li><li><a href="global.html#zipCDNImage">zipCDNImage</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: base/string.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript ">
+/**
+ * 清除字符串两边空格
+ * @param  {String} str
+ * @return {String}
+ */
+function stringTrim (str) {
+    return str.replace(/^\s*|\s*$/g, '');
+}
+
+/**
+ * 清除字符串左边空格
+ * @param  {String} str
+ * @return {String}
+ */
+function stringTrimLeft (str) {
+    return str.replace(/^\s*/, '');
+}
+
+/**
+ * 清除字符串右边空格
+ * @param  {String} str
+ * @return {String}
+ */
+function stringTrimRight (str) {
+    return str.replace(/\s*$/, '');
+}
+
+
+/**
+ * 字符是否以compareStr开头
+ * @param  {String} str
+ * @param  {String} compareStr
+ * @return {Boolean}
+ */
+function startWith (str, compareStr) {
+    return str.indexOf(compareStr) === 0;
+}
+
+/**
+ * 转换为int类型
+ * @param  {String} str
+ * @return {Boolean}
+ */
+function toInt( str ){
+    let num = parseInt(str);
+    return isNaN( num ) ? 0 : num;
+}
+
+/**
+ * 转换为int类型的1或0
+ * @param  {String} str
+ * @return {Boolean}
+ */
+function toIntBool( str ){
+    let bool = str;
+    if ( typeof(str) == 'string'){
+        bool = toInt(str);
+    }
+    return bool ? 1 : 0;
+}
+
+// polyfill startWith
+if (!String.prototype.startWith) {
+    String.prototype.startWith = function(compareStr) {
+        return startWith(this, compareStr);
+    }
+}
+
+/**
+ * old: `type.toJson`
+ * 字符串转为对象
+ * @param  {String} v 需要parse的字符串
+ * @return {Object}
+ */
+function toJson(v, defaultValue = {}){
+    try {
+        return JSON.parse(v) || defaultValue;
+    } catch(e){
+        return {};
+    }
+}
+
+export {
+    stringTrim,
+    stringTrimLeft,
+    stringTrimRight,
+    startWith,
+    toInt,
+    toIntBool,
+    toJson
+};
+
+export default {
+    stringTrim,
+    stringTrimLeft,
+    stringTrimRight,
+    startWith,
+    toInt,
+    toIntBool,
+    toJson
+};
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
+	
+		on 2018-01-16T14:37:15+08:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

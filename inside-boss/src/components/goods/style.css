@@ -1,0 +1,502 @@
+.main_wrapper {
+  min-height: 900px;
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-right: 30px;
+  overflow: hidden;
+  background: #f5f5f5;
+  margin-bottom: 60px;
+}
+
+.select_wrapper {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.select_title {
+  font-size: 16px;
+}
+
+.select {
+  width: 20em;
+  margin: 0 20px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.selecct_img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.selecct_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.top_line {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e2e9e7;
+  padding: 0 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.import_part {
+  float: left;
+  width: 100%;
+  padding: 30px 35px;
+}
+
+.chose_area {
+  font-weight: 500;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 28px;
+  padding: 0 15px;
+  border-radius: 4px;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border:1px solid #d9d9d9;
+  display: inline-block;
+  width: 87px;
+  height: 28px;
+  vertical-align: top;
+  margin: 8px !important;
+}
+
+.chose_area:hover,.chose_area:focus {
+  color: #d52632;
+  background-color: #fff;
+  border-color: #d52632;
+}
+
+.chose_text {
+  width: 82px;
+  height: 26px;
+  float: left;
+  line-height: 26px;
+  font-size: 16px;
+  color: #999;
+}
+
+.chose_btn {
+  width: 26px;
+  height: 26px;
+  background-color: #d52632;
+  border-radius: 4px;
+  float: right;
+  position: relative;
+}
+
+.view_area {
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 24px 0 0px;
+}
+
+.view_text {
+  color: #2a2f31;
+  margin: 12px 0 0 12px;
+  width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.chooseFile {
+  display: inline-block;
+  /*width: 87px;*/
+  height: 28px;
+  border-radius: 4px;
+  vertical-align: top;
+  margin: 8px !important;
+}
+
+.delete_btn {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  float: right;
+  border-radius: 4px;
+  position: relative;
+  top: 11px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.delete_vertical {
+  width: 8px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.delete_horizontal {
+  width: 8px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.submit_btn_wrapper {
+  padding: 10px;
+}
+
+.submit_btn {
+  width: 124px;
+  height: 42px;
+  background-color: #d52632;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(213, 38, 50, 0.4);
+  cursor: pointer;
+}
+
+/*
+* 导出部分
+*
+ */
+
+.export_part {
+  height: 68px;
+  width: 400px;
+  padding-top: 12px;
+  margin-left: 30px;
+  float: left;
+}
+
+.secondButton, .primaryButton {
+  display: inline-block;
+  width: 124px;
+  float: left;
+  height: 34px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.primaryButton {
+  color: #fff;
+  background-color: #d52632;
+  box-shadow: 0 4px 10px rgba(213, 38, 50, 0.4);
+}
+.history_btn{
+  float: right;
+  height: 34px;
+  width: 124px;
+  margin-top: 4px;
+}
+.export_btn {
+  height: 34px;
+  width: 124px;
+  margin-right: 20px;
+}
+
+.vertical_line {
+  height: 36px;
+  width: 1px;
+  border-right: 1px solid #e2e9e7;
+  float: left;
+  margin: 0 35px;
+}
+
+.fileupload {
+  float: left;
+  margin: 25px 28px 0 0;
+}
+
+.errorBox {
+  margin-top: 20px;
+  max-height: 240px;
+  border: 1px solid #e2e9e7;
+  overflow-y: auto;
+}
+
+.errorBox ul {
+  overflow: hidden;
+  border-bottom: 1px solid #e2e9e7;
+}
+
+.errorBox ul:nth-last-of-type(1) {
+  overflow: hidden;
+  border-bottom: none;
+}
+
+.errorBox ul li {
+  float: left;
+  width: 119px;
+  border-right: 1px solid #e2e9e7;
+  text-align: center;
+  line-height: 32px;
+  min-height: 32px;
+}
+
+.errorBox ul li:nth-last-of-type(1) {
+  border-right: none;
+  width: 219px;
+}
+
+.errorBox ul:nth-child(odd) {
+  background: #f5f7f6;
+}
+
+.errorLiLeft {
+  margin-bottom: -1000px;
+  padding-bottom: 1000px;
+}
+
+/*new style for select*/
+
+.main_download {
+  width: 100%;
+  padding: 40px 30px 20px 45px;
+}
+
+.treeSelect {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.selectedList {
+  width: 60%;
+  display: inline-block;
+
+}
+
+/*分页样式*/
+.wrap {
+  border-radius: 2px;
+  background: #fff;
+  margin-top: 22px;
+  padding: 22px;
+  border: 1px solid #e2e9e7;
+}
+
+.headTip {
+  font-size: 16px;
+  padding: 0 10px 10px;
+}
+
+.paginationBox {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.paginationHtml {
+  float: right;
+  margin-right: 25px;
+}
+
+.paginationBox p {
+  height: 28px;
+  line-height: 28px;
+  float: right;
+  margin-right: 10px;
+}
+
+.specificationTable {
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+}
+
+.input_wrapper input[type=file] {
+  opacity: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+.export_warp{
+  height: 44px;
+}
+
+.boxItem{
+  /* border-bottom: 1px solid #797979; */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.itemTitle{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.itemColor{
+  color: #333333;
+}
+
+.Bcolor{
+  color: #2D8cF0;
+}
+
+.optionCount{
+  display: inline-block;
+  width: 32px;
+  line-height: 20px;
+  border-top: 1px solid #E9E9E9;
+  vertical-align: top;
+  text-align: center;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.templateSelectAllWarp{
+  border: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+  transition: all .3s;
+  overflow: hidden;
+}
+.templateSelectGroup{
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.templateSelectAll{
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #E9E9E9;
+  padding: 5px 5px 0;
+}
+
+.templateSelectItem{
+  border-bottom: 1px solid #E9E9E9;
+  padding: 5px 5px 0;
+}
+.itemFooter{
+  border-top: 1px solid #e9e9e9;
+  padding-top: 15px;
+}
+.templateSelectWarp :global(.ant-modal-header){
+  border-bottom: none;
+}
+.templateSelectWarp :global(.ant-modal-title){
+  font-size: 16px;
+  font-weight: bold;
+}
+.resultTitle{
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.resultSuccess{
+  height: 35px;
+  margin-bottom: 15px;
+}
+.resultIcon{
+  float: left;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #00a854;
+}
+.resultTableWarp{
+  margin-bottom: 10px;
+}
+.recoveryTemplate{
+  font-size: 21px;
+  vertical-align: middle;
+  margin-left: 5px;
+  color: #108ee9;
+}
+.itemHide{
+  display: none !important;
+}
+.defaultStyle{
+  color: rgba(0, 0, 0, 0.25) !important;
+  border-color: rgba(0, 0, 0, 0.25) !important;
+  cursor: not-allowed;
+}
+.menuListItem{
+  overflow: unset !important;
+}
+.templateExplanation{
+  color: #6d6b6b;
+  font-size: 12px;
+}
+.feedbackWarp{
+  position: absolute;
+  right: -30px;
+  top: -2%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.feedback{
+  display: inline-block;
+  width: 25px;
+  color: white;
+  white-space: normal;
+  transform: scale(1.3);
+}
+.instructions{
+  float: right;
+  margin: 0 10px 10px 0;
+  text-align: right;
+  color: #2D8cF0;
+}
+.instructions:hover{
+  color: #2D8cF0;
+}
+.instructions:active{
+  color: #2D8cF0;
+}
+
+/* .templateSelectWarp :global(.ant-checkbox + span){
+  font-size: 14px;
+}
+.templateSelectWarp :global(.ant-checkbox-inner){
+  width: 16px;
+  height: 16px;
+} */
+
+

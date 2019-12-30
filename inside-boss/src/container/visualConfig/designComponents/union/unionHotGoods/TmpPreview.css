@@ -1,0 +1,35 @@
+.hotGoodsPreview{
+    width: 100%;
+    height: 228px;
+    background: url('https://assets.2dfire.com/frontend/f2d6260a80bca533740caf38b8a5ed8a.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.header{
+    margin: 20px 0 0 16px;
+    position: relative;
+}
+.title{
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+    max-width: 200px;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    line-height: 18px;
+    height: 22px;
+    vertical-align: top;
+}
+.icon {
+    display: inline-block;
+    width: 21px;
+    height: 7px;
+    margin-left: 9px;
+}
+.description{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+}

@@ -1,0 +1,72 @@
+.list_wrapper {
+    position: relative;
+    /*width: 1402px;*/
+}
+
+.list_top {
+    position: relative;
+    padding: 18px 0;
+}
+
+.list_top_left {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.list_top_left_icon {
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    background: url(./images/Radio.png) no-repeat left center;
+    vertical-align: middle;
+    text-indent: 26px;
+    margin-right: 55px;
+}
+
+.list_top_left_count {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 75px;
+}
+
+.list_top_left_radio_wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list_top_right {
+    float: right;
+}
+
+.list_top_right button {
+    margin-left: 30px;
+    border-radius: 8px;
+}
+
+.list_body {
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.list_bottom {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.pagination {
+    float: right;
+}
+
+.edit_button {
+    margin-right: 30px;
+    color: #fff;
+    background-color: #f5b417;
+    border: 1px solid #f2f2f2;
+}
+
+.edit_button:hover {
+    border: 1px solid #f30;
+}
+
