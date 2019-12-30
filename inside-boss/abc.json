@@ -1,6 +1,0 @@
-{
-  "name": "inside-boss",
-  "port": 3001,
-  "enableFozu": true,
-  "deployPath": "insideboss"
-}
