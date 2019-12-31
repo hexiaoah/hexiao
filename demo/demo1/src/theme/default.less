@@ -1,0 +1,338 @@
+@import '~iview/src/styles/index.less';
+
+body {
+    background-color: #ffffff;
+}
+
+@menu-dark-title: #33363a; //顶部导航背景
+@menu-dark-subsidiary-color: #dcdcdc; //顶部导航未激活文字颜色
+@primary-color: #d83f3f; //主题色（包括按钮颜色，分页选中色块颜色、输入框选中边框颜色等）
+
+
+
+.modal{
+    .ivu-modal-mask{
+        background: rgba(0,0,0, .5)
+    }
+    .ivu-modal{
+       top: 50%;
+       left: 50%;
+       margin-top: -280px;
+       margin-left: -190px;
+       position: absolute;
+    //    top: 150px;
+    }
+    .ivu-modal-content {
+        overflow: hidden;
+    }
+    .ivu-modal-header {
+        display: none;
+    }
+    .ivu-modal-body {
+        padding: 0;
+        .ivu-select {
+            box-sizing: border-box;
+            background: #ffffff;
+            width: 271px;
+            line-height: 40px;
+            height: 40px;
+            position: relative;
+            top: -1px;
+            &::-webkit-input-placeholder {
+                color: #999999;
+            }
+            .ivu-select-selection {
+                height: 42px;
+                width: 273px;
+                border-radius: 0 5px 5px 0;
+            }
+            .ivu-select-selected-value {
+                height: 40px;
+                line-height: 40px;
+            }
+            .ivu-select-placeholder {
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+    .ivu-modal-footer {
+        display: none;
+    }
+}
+// 首页轮播图
+.index{
+    .ivu-carousel-dots-inside{
+        bottom: 25px;
+    }
+    .ivu-carousel-dots li{
+        margin: 0 4px;
+    }
+    .ivu-carousel-dots li button.radius{
+        width: 9px;
+        height: 9px;
+
+    }
+    .ivu-carousel-dots li button{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #FFFFFF;
+    }
+}
+// 意见反馈页
+.feedback {
+    .ivu-radio-group-item {
+        margin-right: 40px;
+        .ivu-radio {
+            margin-right: 10px;
+        }
+    }
+    .ivu-radio-checked .ivu-radio-inner{
+        border-color: #088BDE;
+    }
+    .ivu-radio-inner:after{
+        background-color: #088BDE;
+    }
+}
+
+
+// 所属业务页---- 开发者权限列表页
+.business{
+    .ivu-collapse{
+        border-left: none;
+        border-right: none;
+        &:last-child{
+            border-bottom:1px solid #dddee1;
+        }
+        .ivu-collapse-item {
+            .ivu-collapse-header {
+                position: relative;
+                background: #ffffff;
+                height: 60px !important;
+                line-height: 60px !important;
+                color: #333333 !important;
+                border: 1px solid #dddee1;
+                border-bottom: 0;
+                border-top: 0;
+                &:last-child {
+                    border-bottom: 1px solid #dddee1;
+                }
+                .ivu-icon {
+                    position: absolute;
+                    top: 24px;
+                    right: 30px;
+                }
+            }
+            .ivu-collapse-content {
+                border-top: 1px solid #DEDEDE;
+                padding: 0;
+                background: #ffffff !important;
+                .ivu-collapse-content-box {
+                    padding: 0;
+
+                    .ivu-collapse:nth-child(odd){
+                        border: 0;
+                        border-bottom: 1px solid #dddee1;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        .ivu-collapse-item {
+                            .ivu-collapse-header {
+                                background: #ffffff !important;
+                            }
+                        }
+                    }
+
+                    .ivu-collapse:nth-child(even) {
+                        border: 0;
+                        border-bottom: 1px solid #dddee1;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        .ivu-collapse-item {
+                            .ivu-collapse-header {
+                                background: #f9f9f9 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .collapse1 {
+        .ivu-collapse-header:first-child {
+            background-image: linear-gradient(90deg, #e5e6f6, #fff 50%)  !important;
+        }
+    }
+    .collapse2{
+        .ivu-collapse-header{
+            border-top: 0;
+        }
+    }
+    .app-table {
+        border-top: 1px solid #dedede;
+    }
+    .panel1 {
+        border-bottom: 1px;
+    }
+    .ivu-collapse-content {
+        border-top: 1px solid #DEDEDE;
+        padding: 0;
+        background: #ffffff !important;
+    }
+}
+
+// 日志查询页
+
+.log {
+    .ivu-checkbox-group {
+        display: inline-block;
+    }
+    .ivu-checkbox-wrapper {
+        margin-right: 20px;
+    }
+    .ivu-collapse {
+        border-bottom: 1px;
+        border-radius: 0;
+    }
+    .ivu-collapse-header {
+        box-sizing: border-box;
+        overflow: hidden;
+        background: #ffffff;
+        padding-left: 3% !important;
+        text-align: center;
+        position: relative;
+        height: 60px !important;
+        line-height: 18px !important;
+        .ivu-icon-arrow-right-b {
+            position: absolute;
+            left: 1.2%;
+            top: 22px;
+        }
+        // span {
+        //     float: left;
+        //     width: 20.65%;
+        //     box-sizing: border-box;
+        //     border-right: 1px solid #DEDEDE;
+        //     &.date {
+        //         width: 17.5%;
+        //         border-left: 1px solid #DEDEDE;
+        //     }
+        //     &.requestId{
+        //         width: 20.67%;
+        //     }
+        //     &.last {
+        //         width: 20.45%;
+        //         border-right: none;
+        //     }
+        // }
+    }
+    .ivu-collapse-content {
+        padding: 0 !important;
+        border-top: 1px solid #DEDEDE;
+        .ivu-collapse-content-box {
+            padding: 0;
+        }
+    }
+
+    .ivu-checkbox-checked .ivu-checkbox-inner{
+        border-color: #088BDE;
+        background-color: #088BDE;
+    }
+    .ivu-checkbox-indeterminate .ivu-checkbox-inner{
+        border-color: #088BDE;
+        background-color: #088BDE;
+    }
+    .ivu-page-total{
+        font-size: 14px;
+    }
+
+}
+
+// pc端 商家授权登录页面
+.pc-auth {
+    .ivu-select {
+        box-sizing: border-box;
+        background: #ffffff;
+        width: 271px;
+        line-height: 40px;
+        height: 40px;
+        position: relative;
+        top: -1px;
+        text-align: left;
+        &::-webkit-input-placeholder {
+            color: #999999;
+        }
+        .ivu-select-selection {
+            height: 42px;
+            width: 273px;
+            border-radius: 0 5px 5px 0;
+        }
+        .ivu-select-selected-value {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 12px;
+
+        }
+        .ivu-select-placeholder {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 12px;
+        }
+    }
+}
+
+// 移动端checkbox选择颜色
+.mobile ,.appManager{
+    .ivu-checkbox-checked .ivu-checkbox-inner {
+        border-color: #088BDE;
+        background-color: #088BDE;
+    }
+    .ivu-checkbox-indeterminate .ivu-checkbox-inner {
+        background-color: #2d8cf0;
+        border-color: #2d8cf0;
+    }
+}
+// 开发者列表详情
+.rights-box {
+    .ivu-checkbox-checked .ivu-checkbox-inner {
+        background-color: #2d8cf0;
+        border-color: #2d8cf0;
+    }
+
+ .ivu-btn-primary{
+    font-size: 14px;
+  }
+
+}
+// // 开发者
+    .btn{
+        .ivu-btn-primary {
+          font-size: 14px;
+        }
+    }
+
+//  面包屑
+    .ivu-breadcrumb > span:last-child a {
+        color: #999 !important;
+        font-weight: 400;
+    }
+//  授权登录
+    .countrySelect{
+         width: 50px !important;
+        border-left: 1px solid #dedede !important;
+        .ivu-select-selection{
+            width: 64px !important;
+            display: block;
+            border:none !important;
+            height: 40px !important;
+            box-shadow: none !important;
+        }
+    }
+   .phoneInput{
+        width: 217px !important;
+        border-left:none !important;
+    }

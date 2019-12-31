@@ -1,0 +1,34 @@
+/**
+* zeqi@2dfire.com
+*/
+
+    @media screen and (max-width: 1024px) {
+        .mobile {
+            display: block;
+            background: #EFEFF4;
+            padding-bottom: 30px;
+        }
+
+        .pc{
+            display: none;
+
+        }
+
+        // 移动端背景色
+        .wrap {
+            background: #EFEFF4;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .mobile {
+
+            display: none;
+        }
+
+        .pc{
+            display: block;
+
+        }
+    }
+
+
