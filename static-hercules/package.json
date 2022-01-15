@@ -87,7 +87,7 @@
     "run-sequence": "^2.2.0",
     "sass-loader": "^4.0.2",
     "selenium-server": "2.53.0",
-    "shelljs": "^0.6.0",
+    "shelljs": "^0.8.5",
     "stringify-object": "^3.2.0",
     "url-loader": "^0.5.7",
     "qrcode2": "1.2.3",
